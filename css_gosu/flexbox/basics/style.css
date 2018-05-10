@@ -1,0 +1,116 @@
+h1, h3 {
+    text-align: center;
+}
+
+/*박스 크기*/
+.boxes {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    margin: 10px 15px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.lesson{
+    margin: 50px auto;
+}
+/* 박스 색갈*/
+.box1{
+    background-color: #FF5733;
+}
+
+.box2{
+    background-color: #FFBD33;
+}
+
+.box3{
+    background-color: #DBFF33;
+}
+
+.box4{
+    background-color: #75FF33;
+}
+
+.box5{
+    background-color: #33ff57;
+}
+
+.box6{
+    background-color: #33ffBD;
+}
+
+
+/*Flex-direction*/
+
+.container-basic-flex {
+    display: flex;
+}
+
+.container-flex-direction{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-flex-direction-col-rev{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flexBoxCol-wrapper{
+    display: flex;
+}
+
+/*FLEX-WRAP*/
+
+.container-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-flex-no-wrap{
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+.container-flex-wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+
+.container-justify-content{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+.container-justify-content-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-justify-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-justify-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-justify-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}

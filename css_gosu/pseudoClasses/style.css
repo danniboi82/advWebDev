@@ -1,0 +1,198 @@
+body {
+    background: rgb(167, 167, 255);
+    text-align: center;
+}
+
+h1.title:hover {
+    color: green;
+    background-color: yellow;
+}
+
+input.input1:focus {
+    color: green;
+    background-color: yellow;
+}
+
+button.button1:focus {
+    color: white;
+    background-color: black;
+}
+
+button.button1:hover {
+    color: green;
+    background-color: yellow;
+}
+
+p.active:active,
+a.active:active {
+    color: rgb(142, 238, 113);
+    font-weight: 900;
+    font-size: 50px;
+    background-color: black;
+}
+
+button.button2:active {
+    background-color: purple;
+}
+
+button.button3:hover {
+    background-color: green;
+}
+
+button.button4:focus {
+    background-color: orange;
+}
+
+.buttonActivity {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(133, 133, 133);
+    background-color: white;
+    margin: 40px auto;
+    padding: 25px 80px;
+}
+
+button.coolButton {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 300px;
+    height: 130px;
+    border-radius: 60px;
+    margin: 10px auto;
+    font-size: 30px;
+    background-color: rgba(67, 67, 204, 0.671);
+    outline: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    letter-spacing: 2px;
+    box-shadow: 0 16px rgba(67, 67, 204, 0.932)
+}
+
+button.coolButton:hover {
+    box-shadow: 0 10px rgba(67, 67, 204, 0.932);
+    top: 6px;
+}
+
+button.coolButton:active {
+    box-shadow: none;
+    top: 12px;
+}
+
+/* Transform Acitivites */
+
+.transformActivities {
+    height: 700px;
+    width: 100%;
+    background-color: white;
+}
+
+.trans {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 10px;
+}
+
+.transform {
+    transform: translate(50px 50px)
+}
+
+.transformX {
+    transform: translateX(250px)
+}
+
+.transformY {
+    transform: translateY(-50px)
+}
+
+div.scale {
+    transform: scale(2);
+    top: 100;
+    font-size: 10px;
+    transform-origin: left;
+}
+
+div.rotateActivities {
+    margin: 10px auto;
+    height: 700px;
+    width: 100%;
+    background-color: white;
+}
+
+div.rotate {
+    height: 100px;
+    width: 200px;
+    background-color: gold;
+    color: silver;
+}
+
+div.rotate:hover {
+    transform-origin: right top;
+    transform: rotate(45deg) scale(0.5);
+    animation: rotate 5s infinite;
+    -webkit-transform: rotate(45deg) scale(0.5);
+    -moz-transform: rotate(45deg) scale(0.5);
+    -ms-transform: rotate(45deg) scale(0.5);
+    -o-transform: rotate(45deg) scale(0.5);
+}
+
+#loading {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+div.transitionActivities {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(230, 255, 8)
+}
+
+.transitionDiv {
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin: 25px auto;
+    border: 3px solid red;
+    background-color: powderblue;
+    line-height: 100px;
+}
+
+.transitionDiv:hover {
+    transform: rotate(320deg) scale(2) translateX(300px);
+    background: rgb(1, 1, 204);
+    color: white;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+
+.transDuration {
+    transition-duration: 2s;
+}
+
+.transTiming {
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 10s;
+}
+
+.transProperty {
+    transition-property: background, border-radius;
+    transition-duration: 1s, 5s;
+}
+
+.transDelay {
+    transition-delay: 2s;
+}
+
+.transShorthand {
+    /* transition: properties / duration / timingf(x) / delay */
+    transition: transform 2s ease-out 1s, background 3s;
+}
