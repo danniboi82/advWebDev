@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XHR</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>XHR aka XMLHttpRequest</h1>
+
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>State</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td class='value'>0</td>
+            <td>Unsent</td>
+            <td>Client has been created. open() not called yet</td>
+        </tr>
+        <tr>
+            <td class='value'>1</td>
+            <td>Opened</td>
+            <td> open() has been called</td>
+        </tr>
+        <tr>
+            <td class='value'>2</td>
+            <td>Readers_Received</td>
+            <td>send() has been called, and headers and status are available</td>
+        </tr>
+        <tr>
+            <td class='value'>3</td>
+            <td>Loading</td>
+            <td>Downloading responseText holds partial data</td>
+        </tr>
+        <tr>
+            <td class='value'>4</td>
+            <td>Done</td>
+            <td>Operation is Complete</td>
+        </tr>
+    </table>
+
+    <script src="XHR_ZEN_API.js"></script>
+</body>
+
+</html>

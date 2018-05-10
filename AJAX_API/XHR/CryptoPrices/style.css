@@ -1,0 +1,16 @@
+body{
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+}
+
+#dollars, #euros {
+    margin: 25px auto;
+}
+
+.info-wrapper {
+    background-color: aliceblue;
+    padding: 50px;
+    width: 40%;
+    margin: 25px auto;
+}
