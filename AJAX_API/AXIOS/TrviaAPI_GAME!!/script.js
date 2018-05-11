@@ -10,6 +10,7 @@ axios
 
 createQuestion = data => {
   for (var i = 0; i < data.length; i++) {
+    let answer = data[i].correct_answer;
     console.log(data[i]);
     let question = $("<div>");
     question.addClass(`question-${i}`);
@@ -18,8 +19,9 @@ createQuestion = data => {
       `<p>Question ${i + 1} : ${data[i].question}</p>`
     );
     let choice = data[i].incorrect_answers;
+    console.log(answer);
+
     for (var j = 0; j < choice.length; j++) {
-      console.log(choice[j]);
       //need to loop around multiple choice and inject??? 
       $(`.question-${i}`)
         .append(`
@@ -27,6 +29,8 @@ createQuestion = data => {
           <div class='choices'>
             <input type='radio' value='${j}' id='choice-${j}'  />
             <label for='choice-${j}'>${choice[j]}</label>
+            <input type='radio' value='${answer}' id='${answer}'/>
+            <label for='${answer}'>${answer}</label>
           </div>
         </form>`)
     }
