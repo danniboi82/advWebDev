@@ -17,14 +17,19 @@ createQuestion = data => {
     $(`.question-${i}`).html(
       `<p>Question ${i + 1} : ${data[i].question}</p>`
     );
-
-    //need to loop around multiple choice and inject??? 
-    $(`.question-${i}`)
-    .append
-    (`<div class='choices'>
-
-        <input type='radio' name='A' />
-    </div>`)
+    let choice = data[i].incorrect_answers;
+    for (var j = 0; j < choice.length; j++) {
+      console.log(choice[j]);
+      //need to loop around multiple choice and inject??? 
+      $(`.question-${i}`)
+        .append(`
+        <form>
+          <div class='choices'>
+            <input type='radio' value='${j}' id='choice-${j}'  />
+            <label for='choice-${j}'>${choice[j]}</label>
+          </div>
+        </form>`)
+    }
   }
 };
 
